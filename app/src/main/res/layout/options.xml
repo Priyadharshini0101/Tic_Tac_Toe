@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="293dp"
+        android:layout_height="58dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="TIC TAC TOE"
+        android:textColor="#8A9897"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <ImageView
+        android:layout_width="265dp"
+        android:layout_height="239dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/group"
+        app:layout_constraintBottom_toTopOf="@+id/singleplayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <Button
+        android:id="@+id/singleplayer"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/button"
+        android:text="SINGLE PLAYER"
+        android:textColor="#000000"
+        android:textSize="32dp"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/multiplayer"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button"
+        android:text="MULTI PLAYER"
+        android:textColor="#000000"
+        android:textSize="32dp"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/singleplayer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

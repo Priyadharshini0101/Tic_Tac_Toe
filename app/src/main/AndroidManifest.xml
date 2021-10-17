@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tic_tac_toe">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/tic"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:roundIcon="@mipmap/tic"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tic_Tac_Toe">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".options"
+            android:label="options"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tic_Tac_Toe">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".singlePlayer"
+            android:label="SinglePlayer"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tic_Tac_Toe">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".Mutliplayer"
+            android:label="MultiPlayer"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Tic_Tac_Toe">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+    </application>
+
+</manifest>
